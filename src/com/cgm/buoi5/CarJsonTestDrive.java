@@ -13,14 +13,11 @@ import com.google.gson.Gson;
 public class CarJsonTestDrive {
 
     public static void main(String[] args) {
-        Car car = new Car("100", 2022, "XXXX");
+        Car car = new Car("100", 2022, "xanh");
 
-        Car car2 = new Car("101",
-                2025, "XXYY");
+        Car car2 = new Car("10", 2025, "tim");
 
-        Car car3 = new Car("102",
-                2027, "zzzzzzz");
-                
+        Car car3 = new Car("1", 2027, "do");
 
         List<Car> list = new ArrayList<>();
         list.add(car);
@@ -29,12 +26,13 @@ public class CarJsonTestDrive {
 
         Gson gson = new Gson();
 
-        try(FileWriter writer = new FileWriter("cars.json")){
-            //code
-            gson.toJson(list, writer);
+        try (FileWriter fw = new FileWriter("cars.json")) {
+            // code
+            gson.toJson(list, fw);
 
-        }catch(Exception e){ e.printStackTrace();}
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

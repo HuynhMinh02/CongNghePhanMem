@@ -5,20 +5,19 @@
 package com.cgm.buoi4;
 
 public class A {
-    private B refObject;//Remote//null
+    private B refObject;// Remote//null
 
-
-    public A(){
-        //composition
+    public A() {
+        // composition
         this.refObject = new B();
     }
 
-    //cách 1
-    public A(B b){
+    // cách 1
+    public A(B b) {
         this.refObject = b;
     }
 
-    //cách 2 setter
+    // cách 2 setter
 
     /**
      * @param refObject the refObject to set

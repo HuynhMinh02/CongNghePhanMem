@@ -8,7 +8,8 @@ public class Car {
     String lnum;
     int year;
     String model;
-    //Person ownedBy; 
+
+    // Person ownedBy;
     /**
      * @param lnum
      * @param year
@@ -19,12 +20,7 @@ public class Car {
         this.year = year;
         this.model = model;
     }
+    // XulyDuLieu
+    // ProcessingData
 
-    
-
-
-
-    //XulyDuLieu
-    //ProcessingData
-    
 }

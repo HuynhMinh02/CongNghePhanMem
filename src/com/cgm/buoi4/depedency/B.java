@@ -5,5 +5,5 @@
 package com.cgm.buoi4.depedency;
 
 public class B {
-    
+
 }
