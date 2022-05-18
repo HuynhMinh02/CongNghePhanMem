@@ -5,19 +5,18 @@
 package com.cgm.buoi4;
 
 public class A {
-    private B refObject;// Remote//null
 
-    public A() {
-        // composition
-        this.refObject = new B();
+    //attribute: B
+    private B refObject;//biến đối tượng - biến class: static
+
+    public A(){
+        refObject = new B();
     }
 
-    // cách 1
-    public A(B b) {
+    public A(B b){
         this.refObject = b;
     }
 
-    // cách 2 setter
 
     /**
      * @param refObject the refObject to set
@@ -25,4 +24,6 @@ public class A {
     public void setRefObject(B refObject) {
         this.refObject = refObject;
     }
+
+    
 }

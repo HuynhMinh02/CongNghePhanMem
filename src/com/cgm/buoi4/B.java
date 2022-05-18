@@ -5,5 +5,5 @@
 package com.cgm.buoi4;
 
 public class B {
-
+    
 }

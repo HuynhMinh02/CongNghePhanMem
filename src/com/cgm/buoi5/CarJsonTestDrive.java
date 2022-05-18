@@ -9,30 +9,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 
 public class CarJsonTestDrive {
 
     public static void main(String[] args) {
-        Car car = new Car("100", 2022, "xanh");
 
-        Car car2 = new Car("10", 2025, "tim");
+        Car car = new Car("100", 2022, "XXX");
+        Car car2 = new Car("101", 2017, 
+"yyy");
 
-        Car car3 = new Car("1", 2027, "do");
+        Car car3 = new Car("102", 2018, 
+"zzzz");
 
-        List<Car> list = new ArrayList<>();
-        list.add(car);
-        list.add(car2);
-        list.add(car3);
+        Car car4 = new Car("103", 2018, "lalala");
 
-        Gson gson = new Gson();
+        List<Car> listCar = new ArrayList<>();
 
-        try (FileWriter fw = new FileWriter("cars.json")) {
-            // code
-            gson.toJson(list, fw);
+        listCar.add(car);
+        listCar.add(car2);
+        listCar.add(car3);
+        listCar.add(car4);
 
-        } catch (Exception e) {
+        //JsonArray cars = new JsonArray();
+        //cars.ad
+        
+        Gson gson =new Gson();
+
+        try(FileWriter writer = new FileWriter("cars.json")){
+            gson.toJson(listCar, writer);
+        }catch(Exception e){
             e.printStackTrace();
         }
-    }
+        
+        
 
+    }
+    
 }

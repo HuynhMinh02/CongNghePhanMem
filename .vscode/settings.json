@@ -3,6 +3,9 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\ADMIN\\OneDrive\\Máy tính\\Công Nghệ Phần Mềm\\gson-2.8.9.jar"
+        "gson-2.8.9 (2).jar"
+    ],
+    "cSpell.words": [
+        "Gson"
     ]
 }
